@@ -1,6 +1,6 @@
-## The following files were contrbuted by the student.
+## The following files were contributed by the student.
 * 'README.md': This file, outlines all files used in this dataset analysis.
-* 'CodeBook.md': Listing of variable names/labels, codes, formats, datatypes
+* 'CodeBook.md': Listing of variable names/labels, codes, formats, datatypes.
 * 'run_analysis.R': R file responsible for creating a tidy dataset combining training and testing data, joining multiple data files together. Also creating a summary analysis.
   * Merges the training and the test sets to create one data set.
   * Extracts only the measurements on the mean and standard deviation for each measurement.
