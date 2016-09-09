@@ -58,13 +58,15 @@ dtAllColSubset[1:3]
 # Step 5 creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 setkey(dtAllColSubset, ActivityDescription, SubjectId)
 
-
+# Get the mean of the numeric columns.
 df <- as.data.frame(dtAllColSubset)
 dfAgg <- aggregate(df[, 2:67], list(df$ActivityDescription, df$SubjectId), mean)
 
 head(dfAgg)
 
+# Lose the default column names. 
 dfAgg <- rename(dfAgg, c("Group.1"="ActivityDescription", "Group.2"="Subjectid"))
 
+# Output results.
 df
 dfAgg
